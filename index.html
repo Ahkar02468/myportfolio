@@ -23,19 +23,13 @@
         filter: brightness(120%);
         filter: contrast(120%);
         filter: drop-shadow(10px 10px 10px rgb(52, 79, 199));
-        animation-name: img-animation;
+        animation: img-animation 5s infinite;
       }
       @keyframes img-animation {
-        0% {
-        top:0;
-        -webkit-animation-timing-function: ease-in;
-        }
-
-
-        100% {
-          top: 500px;
-          animation-timing-function: ease-out;
-        }
+        0%    { opacity: 0; }
+        20%   { opacity: 1; }
+        80%   { opacity: 0; }
+        100%  { opacity: 1; }
       }
       </style>
   </head>
