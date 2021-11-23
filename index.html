@@ -23,21 +23,13 @@
         filter: brightness(120%);
         filter: contrast(120%);
         filter: drop-shadow(10px 10px 10px rgb(52, 79, 199));
-        animation: img-animation;
+        animation: img-animation 7s infinite;
       }
       @keyframes img-animation {
-        from {
-        transform : scale(1);
-        opacity   : 1;
-    }
-    50% {
-        transform : scale(0.75);
-        opacity   : 0.25;
-    }
-    to {
-        transform : scale(1);
-        opacity   : 1;
-    }
+        0%    { opacity: 0.5; }
+        20%   { opacity: 1; }
+        80%   { opacity: 0.7; }
+        100%  { opacity: 1; }
       }
       </style>
   </head>
@@ -321,7 +313,7 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form action="#" class="contact__form" netlify>
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
