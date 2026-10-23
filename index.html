@@ -3,689 +3,205 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ahkar Shwe Baw | Technical Lead &amp; Full Stack Developer</title>
-    <meta name="description" content="Technical Lead and full-stack web developer with 6+ years of experience in React, Next.js, Node.js, TypeScript, PHP, WordPress/WooCommerce and AWS. Based in Bangkok, Thailand." />
+    <meta name="description" content="Technical Lead and full-stack developer with 6+ years of experience in React, Next.js, Node.js, TypeScript, PHP, WordPress/WooCommerce and AWS. Based in Bangkok, Thailand." />
     <meta property="og:title" content="Ahkar Shwe Baw | Technical Lead &amp; Full Stack Developer" />
     <meta property="og:description" content="6+ years building, deploying and running web applications and e-commerce stores." />
-    <meta property="og:type" content="website" />
-
-    <link rel="stylesheet" href="css/style.css" />
-
+    <meta property="og:type" content="profile" />
+    <meta name="theme-color" content="#0b0d12" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet" />
-    <style>
-      img.my-profile {
-        /* align-content: center; */
-        border-radius: 50%;
-        float: left;
-        filter: brightness(120%);
-        filter: contrast(120%);
-        filter: drop-shadow(10px 10px 10px rgb(52, 79, 199));
-        animation: img-animation 7s infinite;
-      }
-      @keyframes img-animation {
-        0% {
-          opacity: 0.5;
-        }
-        20% {
-          opacity: 1;
-        }
-        80% {
-          opacity: 0.7;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Person","name":"Ahkar Shwe Baw","jobTitle":"Technical Lead & Full Stack Web Developer","email":"mailto:ahkarshwebaw@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bangkok","addressCountry":"TH"},"sameAs":["https://github.com/Ahkar02468","https://www.linkedin.com/in/ahkar-shwe-baw"]}
+    </script>
+    <script>
+      try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; else if (matchMedia("(prefers-color-scheme: dark)").matches) document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    </script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/jpeg/Myprofile.jpg"
-              alt="Ahkar Shwe Baw Logo Image"
-              class="header__logo-img" />
-          </div>
-          <span class="header__logo-sub">Ahkar Shwe Baw</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#experience" class="header__link">
-                Experience
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu" />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none" />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#experience"> Experience </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
+    <div class="progress" aria-hidden="true"></div>
+    <header class="nav">
+      <div class="wrap nav__in">
+        <a class="nav__logo" href="#top">Ahkar Shwe Baw</a>
+        <ul class="nav__links" id="menu">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__tools">
+          <button class="icon-btn" id="theme" aria-label="Toggle dark mode">◐</button>
+          <button class="icon-btn nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu">☰</button>
         </div>
       </div>
     </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
+    <main id="top">
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero__grid">
+            <div>
+              <span class="mono">Technical Lead · Bangkok, Thailand</span>
+              <h1>I build and run <em>web products</em> end to end.</h1>
+              <p class="lead">Full-stack developer with 6+ years across React, Next.js, Node.js, TypeScript, PHP and WooCommerce, plus hands-on DevOps on AWS, Docker and self-hosted infrastructure. I lead teams and ship multilingual, cross-border online stores.</p>
+              <div class="hero__cta">
+                <a class="btn btn--primary" href="#work">See my work</a>
+                <a class="btn" href="assets/Ahkar_Shwe_Baw_CV.docx" download>Download CV</a>
+                <a class="btn" href="#contact">Get in touch</a>
+              </div>
+            </div>
+            <img class="hero__photo" src="assets/jpeg/ahkar.jpg" alt="Portrait of Ahkar Shwe Baw" width="260" height="260" fetchpriority="high" />
+          </div>
+          <div class="stats">
+            <div class="stat"><b>6+</b><span>years building for the web</span></div>
+            <div class="stat"><b>−60%</b><span>deploy time via CI/CD</span></div>
+            <div class="stat"><b>−40%</b><span>page load time</span></div>
+            <div class="stat"><b>3</b><span>languages: Thai, English, Chinese stores</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <div class="wrap">
+          <div class="sec-head reveal"><span class="mono">Selected work</span><h2>Products I've shipped</h2><p>Live stores, client builds and full-stack projects.</p></div>
+      <article class="feature reveal">
+        <div class="feature__img"><img src="assets/png/lalamhar.png" alt="LALAMHAR storefront hero: Shop often, shop easy" loading="lazy" width="1600" height="1000" /></div>
         <div>
-          <img
-            class="my-profile"
-            src="./assets/jpeg/ahkar.jpg"
-            alt="ahkar piic"
-            width="200"
-            height="200" />
+          <span class="mono">Founder project · 2026</span>
+          <h3>LALAMHAR</h3>
+          <p>Cross-border Thailand–Myanmar store with transparent pricing, a bilingual (EN/Burmese) storefront and a live THB–MMK rate. Self-hosted on a VPS with Coolify; includes a Shopee affiliate product pipeline, Cloudflare Worker monitoring, Resend and Messenger notifications and guest order tracking.</p>
+          <ul class="tags"><li>Medusa v2</li><li>Node.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Redis</li><li>Coolify</li><li>Cloudflare Workers</li></ul>
+          <a class="link-arrow" href="https://lalamhar.store" target="_blank" rel="noreferrer">Visit lalamhar.store →</a>
         </div>
-        <br />
-        <h1 class="heading-primary">
-          Hey, I'm<br />
-          Ahkar Shwe Baw
-        </h1>
-        <p class="text-primary hero-role">
-          Technical Lead &middot; Full Stack Web Developer
-        </p>
-        <!-- <div>
-          <img align="center" class="my-profile" src="./assets/jpeg/ahkar.jpg" alt="ahkar piic" width="200" height="200">
-        </div> -->
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
-          <a href="./#contact" class="btn btn--bg">Contact</a>
+      </article>
+      <article class="feature reveal">
+        <div class="feature__img"><img src="assets/png/amuletcenter-arm.png" alt="Amulet Center ARM home page with featured amulets" loading="lazy" width="1600" height="1000" /></div>
+        <div>
+          <span class="mono">Client project · 2026</span>
+          <h3>Amulet Center ARM</h3>
+          <p>Trilingual (Thai, English, Chinese) e-commerce store for the Lawyer Arm amulet brand: Stripe payments, order tracking, shipping flows, a multilayer cache stack, multilingual SEO and analytics.</p>
+          <ul class="tags"><li>WordPress</li><li>WooCommerce</li><li>Elementor Pro</li><li>Polylang</li><li>Stripe</li><li>LiteSpeed</li><li>Cloudflare</li></ul>
+          <a class="link-arrow" href="https://amuletcenter-arm.com" target="_blank" rel="noreferrer">Visit amuletcenter-arm.com →</a>
         </div>
-        <div class="home-hero__info">
-          <p class="text-primary">
-            Technical Lead with 6+ years of experience building, deploying and
-            running web applications and e-commerce stores with React, Next.js,
-            Node.js, TypeScript, PHP and WordPress/WooCommerce, backed by
-            hands-on DevOps on AWS, Docker and self-hosted infrastructure.
-            Based in Bangkok, Thailand.
-          </p>
-          <!-- <img class="my-profile" src="./assets/jpeg/ahkar.jpg" alt="MySQL" width="200" height="200"> -->
+      </article>
+      <article class="feature reveal">
+        <div class="feature__img"><img src="assets/png/facelapse-ss.png" alt="faceLAPSE application screenshot" loading="lazy" width="1600" height="1000" /></div>
+        <div>
+          <span class="mono">Full-stack · CS50x final · 2024–25</span>
+          <h3>faceLAPSE</h3>
+          <p>Turns photo collections into shareable MP4 time-lapse videos. A decoupled app: Flask, MoviePy and Pillow handle sorting, resizing and rendering; the frontend uses Astro, React islands and TailwindCSS.</p>
+          <ul class="tags"><li>Flask</li><li>MoviePy</li><li>Pillow</li><li>Astro</li><li>React</li><li>TailwindCSS</li></ul>
+          <a class="link-arrow" href="https://github.com/Ahkar02468/facelapse" target="_blank" rel="noreferrer">View code →</a>
         </div>
-      </div>
+      </article>
 
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a
-            href="https://www.linkedin.com/in/ahkar-shwe-baw"
-            target="_blank" rel="noreferrer"
-            class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin.png"
-              alt="icon"
-              class="home-hero__social-icon" />
-          </a>
+          <div class="mini-grid">
+        <div class="mini reveal"><span class="mono">Vanilla JS · 2019–20</span><h3>Film Max</h3><p>Movie and TV discovery site using the TMDb API and Swiper.js.</p><a class="link-arrow" href="https://flimmax.netlify.app" target="_blank" rel="noreferrer">Live demo →</a></div>
+        <div class="mini reveal"><span class="mono">React</span><h3>Project Management</h3><p>Drag-and-drop project and task manager with priorities and tags.</p><a class="link-arrow" href="https://main.d3il5rsjk1o8i0.amplifyapp.com/" target="_blank" rel="noreferrer">Live demo →</a></div>
+        <div class="mini reveal"><span class="mono">Webpack</span><h3>CaloTrakie</h3><p>Calorie tracker for monitoring daily intake.</p><a class="link-arrow" href="https://calorie-tracker-webpack.netlify.app/" target="_blank" rel="noreferrer">Live demo →</a></div>
         </div>
-        <div class="home-hero__social">
-          <a
-            href="https://github.com/Ahkar02468"
-            target="_blank" rel="noreferrer"
-            class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="GitHub"
-              class="home-hero__social-icon" />
-          </a>
         </div>
-        <div class="home-hero__social">
-          <a
-            href="https://twitter.com/ahkarshwebaw"
-            class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/twitter.png"
-              alt="icon"
-              class="home-hero__social-icon" />
-          </a>
-        </div>
-        <!-- <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/yt-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div> -->
-        <div class="home-hero__social">
-          <a
-            href="https://www.facebook.com/ahkar.shwebaw/"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
-            <img
-              src="./assets/png/facebook.png"
-              alt="icon"
-              class="home-hero__social-icon" />
-          </a>
-        </div>
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
-    </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            A bit about what I do, how I work, and the technology I use
-            to ship reliable web products.
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                I'm <strong>Ahkar Shwe Baw</strong>, a
-                <strong>Technical Lead and full-stack web developer</strong>
-                based in Bangkok, Thailand, with 6+ years of experience. I work
-                across the JavaScript ecosystem
-                (<strong>React, Next.js, Node.js, TypeScript</strong>),
-                <strong>PHP</strong> and
-                <strong>WordPress/WooCommerce</strong>, with hands-on DevOps in
-                <strong>AWS, Docker, Linux</strong> and self-hosted
-                infrastructure (Coolify, Cloudflare).
-              </p>
-              <p class="about__content-details-para">
-                I've led development teams, set up CI/CD pipelines and improved
-                site performance, and I build multilingual (Thai, English,
-                Chinese) and cross-border Thailand&ndash;Myanmar online stores.
-                I hold a Bachelor of Engineering in Electronics and
-                Communication.
-              </p>
-            </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">JavaScript (ES6+)</div>
-              <div class="skills__skill">TypeScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">Next.js</div>
-              <div class="skills__skill">Node.js</div>
-              <div class="skills__skill">PHP</div>
-              <div class="skills__skill">HTML5 / CSS3</div>
-              <div class="skills__skill">Python</div>
-              <div class="skills__skill">WordPress</div>
-              <div class="skills__skill">WooCommerce</div>
-              <div class="skills__skill">Elementor Pro</div>
-              <div class="skills__skill">Polylang</div>
-              <div class="skills__skill">Medusa v2</div>
-              <div class="skills__skill">Stripe</div>
-              <div class="skills__skill">MySQL</div>
-              <div class="skills__skill">PostgreSQL</div>
-              <div class="skills__skill">Redis</div>
-              <div class="skills__skill">MongoDB</div>
-              <div class="skills__skill">AWS (S3, API Gateway, EC2, RDS)</div>
-              <div class="skills__skill">Docker</div>
-              <div class="skills__skill">Coolify</div>
-              <div class="skills__skill">Linux VPS</div>
-              <div class="skills__skill">Cloudflare (CDN, Workers)</div>
-              <div class="skills__skill">LiteSpeed</div>
-              <div class="skills__skill">Git / GitHub Actions</div>
-              <div class="skills__skill">CI/CD</div>
-              <div class="skills__skill">Microservices</div>
-              <div class="skills__skill">REST API design</div>
-              <div class="skills__skill">PWA</div>
-              <div class="skills__skill">Automated Testing</div>
-              <div class="skills__skill">Agile/Scrum</div>
-              <div class="skills__skill">Google Tag Manager</div>
-              <div class="skills__skill">Google Ads</div>
-              <div class="skills__skill">SEO</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="experience" class="experience sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">Experience</span>
-          <span class="heading-sec__sub">
-            Where I've worked and what I've delivered.
-          </span>
-        </h2>
-        <div class="timeline">
-          <div class="timeline__item">
-            <h3 class="timeline__title">Technical Lead</h3>
-            <div class="timeline__meta">Wongsakorn Siri Law Firm &middot; Apr 2026 – Present · Bangkok, Thailand (Hybrid)</div>
-            <ul class="timeline__list">
-                <li>Set the technical roadmap, mentor the development team, and own decisions on digital infrastructure, hosting and tooling.</li>
-                <li>Led the build of amuletcenter-arm.com, a trilingual (Thai, English, Chinese) WooCommerce store using WordPress, Elementor Pro and Polylang.</li>
-                <li>Integrated Stripe payments, customer accounts, order tracking and domestic/international shipping and returns flows.</li>
-                <li>Tuned performance across LiteSpeed Cache, Cloudflare CDN and browser cache; built multilingual SEO, WebP optimization, Google Tag Manager and a cookie consent banner.</li>
-                <li>Planned the Google Ads launch strategy and connected LINE, WhatsApp, WeChat, Facebook, TikTok and YouTube for Thai, Chinese and international buyers.</li>
-            </ul>
-          </div>
-          <div class="timeline__item">
-            <h3 class="timeline__title">Founder &amp; Developer</h3>
-            <div class="timeline__meta">LALAMHAR (side business) &middot; 2026 – Present · Remote</div>
-            <ul class="timeline__list">
-                <li>Building lalamhar.store, a cross-border Thailand–Myanmar dropshipping store on Medusa v2 (Node.js, TypeScript).</li>
-                <li>Moved hosting from Railway to a self-managed HostHatch VPS with Coolify, splitting the app into server and worker containers sharing PostgreSQL and Redis.</li>
-                <li>Built a Shopee affiliate product pipeline: memory-efficient filtering of a 4 GB daily feed, staged imports via the Medusa Admin API, and a Cloudflare Worker monitoring sourcing.</li>
-                <li>Set up Resend email and Facebook Messenger notifications plus a guest order-tracking page.</li>
-            </ul>
-          </div>
-          <div class="timeline__item">
-            <h3 class="timeline__title">Freelance Web Developer &amp; IT Consultant</h3>
-            <div class="timeline__meta">Self-employed &middot; Dec 2025 – Apr 2026 · Bangkok, Thailand</div>
-            <ul class="timeline__list">
-                <li>Designed and deployed a WordPress business website for a lubricant distribution company.</li>
-                <li>Registered and configured a .th domain with DNS for a dinner cruise operator, and consulted on ERP selection.</li>
-                <li>Configured Microsoft 365 business email, including domain verification, mailboxes and onboarding.</li>
-            </ul>
-          </div>
-          <div class="timeline__item">
-            <h3 class="timeline__title">Hostel Manager</h3>
-            <div class="timeline__meta">Tropical Summer Hostel &amp; Cafe &middot; Dec 2024 – Dec 2025 · Bangkok, Thailand</div>
-            <ul class="timeline__list">
-                <li>Synchronized real-time inventory across 4+ OTA platforms with 100% accuracy, eliminating overbooking.</li>
-                <li>Applied occupancy-based dynamic pricing and streamlined reservation workflows; recruited and trained staff.</li>
-            </ul>
-          </div>
-          <div class="timeline__item">
-            <h3 class="timeline__title">Technical Lead / Executive Officer</h3>
-            <div class="timeline__meta">Waaneiza Worldwide Trading &middot; Nov 2018 – Apr 2024 · Yangon, Myanmar</div>
-            <ul class="timeline__list">
-                <li>Led in-house development of multiple web applications, managing and mentoring 4 junior developers.</li>
-                <li>Designed and maintained RESTful APIs; introduced Agile/Scrum and spearheaded PWA adoption.</li>
-                <li>Implemented automated testing and GitHub Actions CI/CD, reducing deployment times by 60%.</li>
-                <li>Refactored server-side logic and added lazy loading/code splitting, cutting page load times by 40% and improving Core Web Vitals.</li>
-            </ul>
-          </div>
-          <div class="timeline__item">
-            <h3 class="timeline__title">Trainee Engineer</h3>
-            <div class="timeline__meta">NTS Myanmar &middot; Feb 2018 – May 2018 · Yangon, Myanmar</div>
-            <ul class="timeline__list">
-                <li>Assisted senior engineers on electronic systems projects, site inspections and project documentation.</li>
-            </ul>
-          </div>
-        </div>
-        <h3 class="about__content-title timeline__edu-heading">Education</h3>
-        <div class="timeline">
-          <div class="timeline__item">
-            <h3 class="timeline__title">Bachelor of Engineering (B.E) &ndash; Electronic and Communication</h3>
-            <div class="timeline__meta">Technological University Hmawbi &middot; 2013&ndash;2018</div>
-            <ul class="timeline__list">
-              <li>Raspberry Pi-Based Entertainment Center: 2nd place in department; winner of the Brainchild Program on Channel 7.</li>
-              <li>Cloud Printing Server: Best of the Best award; exhibited at the Science and Technology Fair (MICC Naypyidaw) and Youth Festival, Yangon University.</li>
-            </ul>
-          </div>
-          <div class="timeline__item">
-            <h3 class="timeline__title">Bachelor of Technology (B.Tech) &ndash; Electronic and Communication</h3>
-            <div class="timeline__meta">Technological University Thanlyin &middot; 2010&ndash;2013</div>
-          </div>
-        </div>
-        <p class="text-primary timeline__langs"><strong>Languages:</strong> English (Advanced) &middot; Burmese (Native)</p>
-      </div>
-    </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Selected client, business and personal projects.
-          </span>
-        </h2>
+      </section>
 
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">LALAMHAR</h3>
-              <p class="projects__row-content-desc">
-                Cross-border Thailand–Myanmar dropshipping store on Medusa v2 (Node.js, TypeScript), self-hosted with Coolify on a VPS. Includes a Shopee affiliate product pipeline, a Cloudflare Worker for sourcing, Resend and Messenger notifications, and guest order tracking.
-              </p>
-              <a
-                href="https://lalamhar.store"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank" rel="noreferrer"
-                >Visit Site</a
-              >
-            </div>
+      <section id="experience">
+        <div class="wrap">
+          <div class="sec-head reveal"><span class="mono">Experience</span><h2>Leading teams, shipping outcomes</h2></div>
+          <div class="timeline">
+        <article class="role reveal">
+          <h3>Technical Lead</h3>
+          <div class="meta">Wongsakorn Siri Law Firm · Apr 2026 – Present · Bangkok (Hybrid)</div>
+          <ul><li>Own the technical roadmap, hosting and tooling decisions, and mentor the development team.</li><li>Led the build of amuletcenter-arm.com, a trilingual (Thai, English, Chinese) WooCommerce store on WordPress, Elementor Pro and Polylang.</li><li>Integrated Stripe payments, customer accounts, order tracking and domestic/international shipping and returns.</li><li>Tuned performance across LiteSpeed Cache, Cloudflare CDN and browser cache; built multilingual SEO, WebP optimization, Google Tag Manager and a consent banner.</li><li>Planned the Google Ads launch and connected LINE, WhatsApp, WeChat, Facebook, TikTok and YouTube.</li></ul>
+        </article>
+        <article class="role reveal">
+          <h3>Founder &amp; Developer · LALAMHAR</h3>
+          <div class="meta">Side business · 2026 – Present · Remote</div>
+          <ul><li>Building lalamhar.store, a cross-border Thailand–Myanmar store on Medusa v2 (Node.js, TypeScript).</li><li>Moved hosting from Railway to a self-managed VPS with Coolify: separate server and worker containers sharing PostgreSQL and Redis.</li><li>Built a Shopee affiliate pipeline: filter for a 4 GB daily feed, staged imports via the Medusa Admin API, Cloudflare Worker sourcing monitor.</li><li>Added Resend email and Messenger notifications and guest order tracking.</li></ul>
+        </article>
+        <article class="role reveal">
+          <h3>Freelance Web Developer &amp; IT Consultant</h3>
+          <div class="meta">Self-employed · Dec 2025 – Apr 2026 · Bangkok</div>
+          <ul><li>Delivered a WordPress business site for a lubricant distributor; registered a .th domain and DNS for a dinner cruise operator; consulted on ERP selection; configured Microsoft 365 email.</li></ul>
+        </article>
+        <article class="role reveal">
+          <h3>Hostel Manager</h3>
+          <div class="meta">Tropical Summer Hostel &amp; Cafe · Dec 2024 – Dec 2025 · Bangkok</div>
+          <ul><li>Synchronized inventory across 4+ OTA platforms with 100% accuracy, eliminating overbooking.</li><li>Applied occupancy-based dynamic pricing and streamlined reservation workflows; recruited and trained staff.</li></ul>
+        </article>
+        <article class="role reveal">
+          <h3>Technical Lead / Executive Officer</h3>
+          <div class="meta">Waaneiza Worldwide Trading · Nov 2018 – Apr 2024 · Yangon, Myanmar</div>
+          <ul><li>Led in-house web development and mentored 4 junior developers; introduced Agile/Scrum and drove PWA adoption.</li><li>Built automated testing and GitHub Actions CI/CD, <strong>cutting deployment time by 60%</strong>.</li><li>Refactored server logic and added lazy loading/code splitting, <strong>cutting page load times by 40%</strong> and improving Core Web Vitals.</li><li>Designed and maintained RESTful APIs for third-party integrations.</li></ul>
+        </article>
+        <article class="role reveal">
+          <h3>Trainee Engineer</h3>
+          <div class="meta">NTS Myanmar · Feb 2018 – May 2018 · Yangon</div>
+          <ul><li>Supported senior engineers on electronic systems projects, site inspections and documentation.</li></ul>
+        </article>
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Amulet Center ARM</h3>
-              <p class="projects__row-content-desc">
-                Trilingual (Thai, English, Chinese) WooCommerce store for the Lawyer Arm amulet brand with Stripe payments, order tracking, multilayer caching (LiteSpeed, Cloudflare), multilingual SEO and analytics.
-              </p>
-              <a
-                href="https://amuletcenter-arm.com"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank" rel="noreferrer"
-                >Visit Site</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/facelapse-ss.png"
-                alt="Project screenshot"
-                class="projects__row-img"
-                loading="lazy" />
-                <br />
-              <img
-                src="./assets/png/facelapse-ss1.png"
-                alt="Project screenshot"
-                class="projects__row-img"
-                loading="lazy" />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">faceLAPSE</h3>
-              <p class="projects__row-content-desc">
-                CS50x final project: a full-stack web app that turns photo collections into shareable MP4 time-lapse videos. Python backend (Flask, MoviePy, Pillow) handles sorting, resizing and rendering; the decoupled frontend uses Astro, React islands and TailwindCSS.
-              </p>
-              <a
-                href="https://github.com/Ahkar02468/facelapse"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/pm-dashboard.png"
-                alt="Project screenshot"
-                class="projects__row-img"
-                loading="lazy" />
-                <br />
-              <img
-                src="./assets/png/pm-home.png"
-                alt="Project screenshot"
-                class="projects__row-img"
-                loading="lazy" />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project Management</h3>
-              <p class="projects__row-content-desc">
-                This project is designed for managing various projects
-                efficiently with a user-friendly interface. It provides features
-                like DragNDrop for creating, editing, and managing projects,
-                tasks, and users. Priority levels are also included to help you
-                manage tasks effectively. Tags are also included to help you
-                manage tasks effectively.
-              </p>
-              <a
-                href="https://main.d3il5rsjk1o8i0.amplifyapp.com/"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View Live</a
-              >
-            </div>
-          </div>
+        </div>
+      </section>
 
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/flimmax.png"
-                alt="Project screenshot"
-                class="projects__row-img"
-                loading="lazy" />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Film Max</h3>
-              <p class="projects__row-content-desc">
-                Movie and TV discovery site built with vanilla JS and Swiper.js, fetching live data from The Movie Database (TMDb) API into a clean, interactive UI.
-              </p>
-              <a
-                href="https://flimmax.netlify.app"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View Live</a
-              >
-            </div>
+      <section id="skills">
+        <div class="wrap">
+          <div class="sec-head reveal"><span class="mono">Skills</span><h2>Toolbox</h2></div>
+          <div class="cols">
+          <div class="card reveal"><h3>Languages &amp; Frameworks</h3><ul class="tags"><li>JavaScript (ES6+)</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Node.js</li><li>PHP</li><li>HTML5</li><li>CSS3</li><li>Python</li></ul></div>
+          <div class="card reveal"><h3>CMS &amp; E-commerce</h3><ul class="tags"><li>WordPress</li><li>WooCommerce</li><li>Elementor Pro</li><li>Polylang</li><li>Medusa v2</li><li>Stripe</li></ul></div>
+          <div class="card reveal"><h3>Databases</h3><ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>Redis</li><li>AWS RDS</li><li>MongoDB</li></ul></div>
+          <div class="card reveal"><h3>Cloud &amp; DevOps</h3><ul class="tags"><li>AWS (S3 · API Gateway · EC2)</li><li>Docker</li><li>Coolify</li><li>Linux VPS</li><li>Cloudflare</li><li>LiteSpeed</li><li>GitHub Actions</li><li>CI/CD</li><li>Microservices</li></ul></div>
+          <div class="card reveal"><h3>Marketing &amp; Analytics</h3><ul class="tags"><li>Google Tag Manager</li><li>Google Ads</li><li>SEO</li></ul></div>
+          <div class="card reveal"><h3>Practices</h3><ul class="tags"><li>REST API design</li><li>PWA</li><li>Automated testing</li><li>Agile/Scrum</li></ul></div>
           </div>
+        </div>
+      </section>
 
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/calorie-tracker.png"
-                alt="Project screenshot"
-                class="projects__row-img"
-                loading="lazy" />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">CaloTrakie</h3>
-              <p class="projects__row-content-desc">
-                Tracalorie 2.0 is a tool that helps you track the number of
-                calories you consume. It allows you to easily monitor your
-                caloric intake and make healthier choices.
-              </p>
-              <a
-                href="https://calorie-tracker-webpack.netlify.app/"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View Live</a
-              >
-            </div>
-          </div>
-          <!-- <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div> -->
-          <!-- <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 2</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div> -->
-          <!-- </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div> -->
-          <!-- <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 3</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div> -->
-          <!-- </div> -->
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Open to technical lead and full-stack opportunities. Email me at
-            <a href="mailto:ahkarshwebaw@gmail.com">ahkarshwebaw@gmail.com</a>
-            or send a message below.
-          </span>
-        </h2>
-        <div class="contact__form-container">
-          <form action="#" class="contact__form" netlify>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name" />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="email"
-                class="contact__form-input"
-                name="email"
-                id="email" />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ahkar-shwe-baw">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin_bottom.png"
-                  alt="icon" />
-              </a>
-              <!-- <a target="_blank" rel="noreferrer" href="https://twitter.com/ahkarshwebaw">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a> -->
-              <a target="_blank" rel="noreferrer" href="https://www.facebook.com/ahkar.shwebaw/">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter_bottom.png"
-                  alt="icon" />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/facebook_bottom.png"
-                  alt="icon" />
-              </a>
-              <!-- <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a> -->
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Ahkar Shwe Baw</h4>
-            <p class="main-footer__short-desc">
-              Technical Lead &amp; Full Stack Web Developer in Bangkok,
-              Thailand. ahkarshwebaw@gmail.com &middot; +66 64 887 1759
-            </p>
+      <section id="education">
+        <div class="wrap">
+          <div class="sec-head reveal"><span class="mono">Education</span><h2>Engineering foundations</h2></div>
+          <div class="cols">
+            <div class="card reveal"><h3>B.E. Electronic &amp; Communication</h3><p>Technological University Hmawbi · 2013–2018</p><ul><li>Raspberry Pi Entertainment Center: 2nd place in department; winner of the Brainchild Program on Channel 7.</li><li>Cloud Printing Server: Best of the Best award; exhibited at the Science and Technology Fair (MICC Naypyidaw) and Youth Festival, Yangon University.</li></ul></div>
+            <div class="card reveal"><h3>B.Tech Electronic &amp; Communication</h3><p>Technological University Thanlyin · 2010–2013</p></div>
+            <div class="card reveal"><h3>Languages</h3><p>English (Advanced) · Burmese (Native)</p></div>
           </div>
         </div>
+      </section>
 
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
+      <section id="contact" class="contact">
+        <div class="wrap reveal">
+          <span class="mono">Contact</span>
+          <h2>Let's build something reliable.</h2>
+          <p>Open to technical lead and full-stack opportunities. The fastest way to reach me is email.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="mailto:ahkarshwebaw@gmail.com">ahkarshwebaw@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/ahkar-shwe-baw" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://github.com/Ahkar02468" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="tel:+66648871759">+66 64 887 1759</a>
+          </div>
         </div>
-      </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap"><span>© <span id="year">2026</span> Ahkar Shwe Baw</span><span>Bang Chak, Bangkok, Thailand</span></div>
     </footer>
-
-    <script src="./index.js"></script>
-    <script
-      src="//code.tidio.co/ydfzmylfj2ytuwedlw07km7agmghwuee.js"
-      async></script>
-    <!-- <script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/373487" async></script>
-    <script type="text/javascript" src="https://popupsmart.com/freechat.js"></script><script> window.start.init({ title: "Hi there ✌️I'm Ahkar Shwe Baw, contact me if you like to talk 😉", message: "How may we help you? Just send us a message now to get assistance.", color: "#9C58CE", position: "right", placeholder: "Enter your message", withText: "Write with", viaWhatsapp: "Or write us directly via Whatsapp", gty: "Go to your", awu: "and write us", connect: "Connect now",  button: "ဘာပြောချင်ပါသလဲ", device: "everywhere", logo: "https://d2r80wdbkwti6l.cloudfront.net/ZT3mdnLQMZh0zvS1YZwTq3PAkr0wCdGm.jpg", person: "https://d2r80wdbkwti6l.cloudfront.net/9hR9ml7PoYpiZEQWvvZLzodKFOi2REDu.jpg",  services: [{"name":"messenger","content":"115766847370553"},{"name":"whatsapp","content":"+959956029790"}]})</script> -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      var root = document.documentElement;
+      document.getElementById("theme").onclick = function () {
+        var next = root.dataset.theme === "dark" ? "light" : "dark";
+        root.dataset.theme = next;
+        try { localStorage.setItem("theme", next); } catch (e) {}
+      };
+      var burger = document.getElementById("burger"), menu = document.getElementById("menu");
+      burger.onclick = function () { burger.setAttribute("aria-expanded", menu.classList.toggle("open")); };
+      menu.onclick = function () { menu.classList.remove("open"); burger.setAttribute("aria-expanded", "false"); };
+      var els = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+        els.forEach(function (el) { io.observe(el); });
+      } else els.forEach(function (el) { el.classList.add("in"); });
+    </script>
+    <script src="//code.tidio.co/ydfzmylfj2ytuwedlw07km7agmghwuee.js" async></script>
   </body>
 </html>
